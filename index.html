@@ -67,6 +67,19 @@
       background-color: #fef08a;
       padding: 2px 4px;
       border-radius: 2px;
+      font-weight: 600;
+    }
+    
+    .mobile-reading-text u {
+      text-decoration: underline;
+      font-weight: 600;
+      color: #1e40af;
+    }
+    
+    .mobile-reading-text strong {
+      font-weight: 700;
+      color: #1e293b;
+      font-size: 1.1em;
     }
     .progress-ring {
       transform: rotate(-90deg);
@@ -450,37 +463,64 @@
       }
     ];
 
-    const readingText = `Future cities will feature revolutionary technologies that transform how we live and learn. <span class="highlight">3D printed houses</span> will provide affordable housing solutions, while <span class="highlight">floating buildings</span> help cities adapt to climate change. <span class="highlight">Driverless</span> vehicles and <span class="highlight">flying vehicles</span> will navigate through <span class="highlight">digital roads</span>, reducing traffic congestion significantly.
+    const readingText = `<div style="text-align: center; margin-bottom: 2rem;">
+<strong style="font-size: 1.4em; color: #1e40af;">Future Cities and Education: A Vision of Tomorrow</strong>
+</div>
 
-Education will embrace cutting-edge innovations like <span class="highlight">3D Digi books</span> and <span class="highlight">virtual reality headsets</span> for immersive learning experiences. Students will attend classes using <span class="highlight">hologram devices</span>, making distance learning more interactive. <span class="highlight">Home schooling</span> will become mainstream as technology makes quality education accessible everywhere.
+<p>The concept of <u>"smart cities"</u> represents a revolutionary approach to urban development that will fundamentally transform how we live, work, and learn. These cities will integrate advanced technologies to create more sustainable and efficient environments for their residents. <span class="highlight">3D printed houses</span> will provide affordable housing solutions, addressing the global housing crisis while reducing construction costs and environmental impact. Meanwhile, <span class="highlight">floating buildings</span> will help coastal cities adapt to rising sea levels caused by climate change, ensuring urban <u>"sustainability"</u> in the face of environmental challenges. <strong>[I]</strong></p>
 
-Smart infrastructure will include <span class="highlight">solar windows</span> that generate clean energy, <span class="highlight">vertical farms</span> growing food in urban spaces, and <span class="highlight">moving walkways</span> connecting buildings via <span class="highlight">skybridges</span>. <span class="highlight">Sensors</span> will continuously <span class="highlight">measure</span> air quality and traffic flow. <span class="highlight">Drone delivery</span> services will transport goods efficiently, while <span class="highlight">cyborgs</span> and <span class="highlight">technicians</span> maintain city systems. These <span class="highlight">valuable</span> innovations represent the <span class="highlight">possibility</span> of creating sustainable, intelligent communities. Such <span class="highlight">predictions</span> suggest cities will become more <span class="highlight">appropriate</span> for human needs, where people can <span class="highlight">socialise</span> and <span class="highlight">exchange</span> ideas in harmony with advanced technology.`;
+<br><br>
+
+<p>Transportation systems will undergo dramatic changes with the introduction of <span class="highlight">driverless vehicles</span> and <span class="highlight">flying vehicles</span> that navigate through <span class="highlight">digital roads</span>. These innovations will significantly reduce traffic congestion and improve safety by eliminating human error. <span class="highlight">Underground motorways</span> and <span class="highlight">vacuum tube trains</span> will provide rapid transit options, while <span class="highlight">moving walkways</span> and <span class="highlight">skybridges</span> will connect different areas of the city seamlessly. <strong>[II]</strong></p>
+
+<br><br>
+
+<p>Education will embrace cutting-edge innovations that make learning more engaging and accessible. <span class="highlight">3D Digi books</span> and <span class="highlight">virtual reality headsets</span> will create immersive learning experiences that bring abstract concepts to life. Students will attend classes using <span class="highlight">hologram devices</span>, making distance learning as interactive as traditional classroom settings. <strong>[III]</strong> <u>"Home schooling"</u> will become mainstream as technology makes quality education accessible to everyone, regardless of their geographical location.</p>
+
+<br><br>
+
+<p>Smart infrastructure will include <span class="highlight">solar windows</span> that generate clean energy while maintaining transparency, and <span class="highlight">vertical farms</span> that grow fresh food in urban spaces, reducing the need for long-distance transportation of produce. <span class="highlight">Sensors</span> will continuously monitor air quality, traffic flow, and energy consumption, while <span class="highlight">drone delivery</span> services will transport goods efficiently. <strong>These valuable innovations represent the possibility of creating truly sustainable, intelligent communities</strong> where technology serves humanity's needs. <strong>[IV]</strong></p>`;
 
     const readingQuestions = [
       {
-        question: "What will help cities adapt to climate change?",
-        options: ["3D printed houses", "Floating buildings", "Digital roads", "Moving walkways"],
+        question: "1. The word \"sustainability\" in paragraph 1 is CLOSEST in meaning to ________________.",
+        options: ["A. environmental protection", "B. economic growth", "C. technological advancement", "D. population increase"],
+        correct: 0
+      },
+      {
+        question: "2. What does the word \"These\" in paragraph 2 refer to?",
+        options: ["A. transportation systems", "B. driverless and flying vehicles", "C. digital roads", "D. traffic problems"],
         correct: 1
       },
       {
-        question: "What will make distance learning more interactive?",
-        options: ["Traditional books", "Hologram devices", "Regular computers", "Paper worksheets"],
-        correct: 1
-      },
-      {
-        question: "What will generate clean energy in future buildings?",
-        options: ["Regular windows", "Solar windows", "Glass doors", "Metal panels"],
-        correct: 1
-      },
-      {
-        question: "Who will maintain smart city systems?",
-        options: ["Only humans", "Cyborgs and technicians", "Robots only", "Students"],
-        correct: 1
-      },
-      {
-        question: "What will continuously measure air quality and traffic flow?",
-        options: ["Cameras", "Computers", "Sensors", "Drones"],
+        question: "3. The word \"mainstream\" in paragraph 3 is OPPOSITE in meaning to ________________.",
+        options: ["A. popular", "B. common", "C. unusual", "D. advanced"],
         correct: 2
+      },
+      {
+        question: "4. In which paragraph does the writer explain how cities will address housing problems?",
+        options: ["A. Paragraph 1", "B. Paragraph 2", "C. Paragraph 3", "D. Paragraph 4"],
+        correct: 0
+      },
+      {
+        question: "5. Where in the passage does the following sentence best fit? \"This can hide deeper emotions and prevent healthy communication.\"",
+        options: ["A. [I]", "B. [II]", "C. [III]", "D. [IV]"],
+        correct: 2
+      },
+      {
+        question: "6. Which of the following is TRUE according to the passage?",
+        options: ["A. Flying vehicles will completely replace traditional cars", "B. 3D printed houses will solve all housing problems immediately", "C. Virtual reality will make traditional classrooms unnecessary", "D. Sensors will continuously monitor various city systems"],
+        correct: 3
+      },
+      {
+        question: "7. Which of the following best paraphrases the underlined sentence \"These valuable innovations represent the possibility of creating truly sustainable, intelligent communities\"?",
+        options: ["A. These important technologies show how we can build eco-friendly, smart cities", "B. Expensive inventions will definitely create perfect communities for everyone", "C. Only valuable innovations can solve all urban problems completely", "D. Smart communities require the most expensive technological solutions"],
+        correct: 0
+      },
+      {
+        question: "8. Which can be inferred from the passage?",
+        options: ["A. Future cities will eliminate all current urban problems", "B. Technology integration requires careful planning for successful implementation", "C. Traditional education methods will disappear completely", "D. Only wealthy cities can afford smart city technologies"],
+        correct: 1
       }
     ];
 
@@ -666,12 +706,14 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
     let currentTab = 'vocabulary';
     let currentVocabIndex = 0;
     let isFlipped = false;
-    let currentReadingAnswer = Array(5).fill(null);
+    let currentReadingAnswer = Array(8).fill(null);
     let currentGrammarTopic = null;
     let currentExerciseAnswers = Array(30).fill(null);
     let progressData = { vocabulary: 0, reading: 0, grammar: 0 };
     let vocabularyMode = 'learn'; // 'learn' or 'quiz'
     let currentVocabQuizAnswers = Array(36).fill(null);
+    let currentVocabQuizIndex = 0;
+    let currentGrammarExerciseIndex = 0;
 
 
     const dataHandler = {
@@ -782,6 +824,34 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
       }
     }
 
+    function nextVocabQuiz() {
+      if (currentVocabQuizIndex < vocabularyQuizzes.length - 1) {
+        currentVocabQuizIndex++;
+        render();
+      }
+    }
+
+    function prevVocabQuiz() {
+      if (currentVocabQuizIndex > 0) {
+        currentVocabQuizIndex--;
+        render();
+      }
+    }
+
+    function nextGrammarExercise() {
+      if (currentGrammarExerciseIndex < grammarExercises.length - 1) {
+        currentGrammarExerciseIndex++;
+        render();
+      }
+    }
+
+    function prevGrammarExercise() {
+      if (currentGrammarExerciseIndex > 0) {
+        currentGrammarExerciseIndex--;
+        render();
+      }
+    }
+
     function flipCard() {
       isFlipped = !isFlipped;
       render();
@@ -797,8 +867,9 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
         playIncorrectSound();
       }
       
-      const correctCount = currentReadingAnswer.filter((ans, idx) => ans === readingQuestions[idx].correct).length;
-      updateProgress('reading', (correctCount / readingQuestions.length) * 100);
+      // Tính tiến độ dựa trên số câu đã trả lời (không cần đúng)
+      const answeredCount = currentReadingAnswer.filter(ans => ans !== null).length;
+      updateProgress('reading', (answeredCount / readingQuestions.length) * 100);
       render();
     }
 
@@ -978,34 +1049,65 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
             </div>
           `;
         } else if (vocabularyMode === 'quiz') {
+          const quiz = vocabularyQuizzes[currentVocabQuizIndex];
+          const isAnswered = currentVocabQuizAnswers[currentVocabQuizIndex] !== null;
+          
           content += `
             <div class="space-y-4">
-              <h3 class="font-bold mb-4" style="font-size: ${baseSize * 1.3}px;">Kiểm tra từ vựng (${vocabularyQuizzes.length} câu)</h3>
-              ${vocabularyQuizzes.map((quiz, qIdx) => `
-                <div class="p-4 rounded-lg" style="background-color: ${config.background_color || defaultConfig.background_color};">
-                  <p class="font-semibold mb-3" style="font-size: ${baseSize}px;">${qIdx + 1}. ${quiz.question}</p>
-                  ${quiz.options.map((opt, optIdx) => {
-                    const isSelected = currentVocabQuizAnswers[qIdx] === optIdx;
-                    const isCorrect = optIdx === quiz.correct;
-                    const showResult = currentVocabQuizAnswers[qIdx] !== null;
-                    let bgColor = config.card_color || defaultConfig.card_color;
-                    if (showResult && isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
-                    if (showResult && isSelected && !isCorrect) bgColor = '#ef4444';
-                    if (showResult && !isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
-                    
-                    return `
-                      <button onclick="checkVocabQuizAnswer(${qIdx}, ${optIdx})" 
-                        class="w-full text-left p-3 rounded mb-2 transition-colors"
-                        style="background-color: ${bgColor}; 
-                               color: ${showResult && (isCorrect || isSelected) ? 'white' : (config.text_color || defaultConfig.text_color)}; 
-                               font-size: ${baseSize * 0.9}px;
-                               border: 2px solid ${isSelected ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};">
-                        ${opt}
-                      </button>
-                    `;
-                  }).join('')}
+              <h3 class="font-bold mb-4" style="font-size: ${baseSize * 1.3}px;">Kiểm tra từ vựng</h3>
+              <div class="p-4 rounded-lg" style="background-color: ${config.background_color || defaultConfig.background_color};">
+                <p class="font-semibold mb-3" style="font-size: ${baseSize}px;">${currentVocabQuizIndex + 1}. ${quiz.question}</p>
+                ${quiz.options.map((opt, optIdx) => {
+                  const isSelected = currentVocabQuizAnswers[currentVocabQuizIndex] === optIdx;
+                  const isCorrect = optIdx === quiz.correct;
+                  let bgColor = config.card_color || defaultConfig.card_color;
+                  let textColor = config.text_color || defaultConfig.text_color;
+                  
+                  // Chỉ hiển thị màu kết quả khi đã trả lời
+                  if (isAnswered) {
+                    if (isSelected && isCorrect) {
+                      bgColor = config.accent_color || defaultConfig.accent_color;
+                      textColor = 'white';
+                    } else if (isSelected && !isCorrect) {
+                      bgColor = '#ef4444';
+                      textColor = 'white';
+                    } else if (!isSelected && isCorrect) {
+                      bgColor = config.accent_color || defaultConfig.accent_color;
+                      textColor = 'white';
+                    }
+                  }
+                  
+                  return `
+                    <button onclick="checkVocabQuizAnswer(${currentVocabQuizIndex}, ${optIdx})" 
+                      ${isAnswered ? 'disabled' : ''}
+                      class="w-full text-left p-3 rounded mb-2 transition-colors ${isAnswered ? 'cursor-not-allowed' : 'hover:opacity-80'}"
+                      style="background-color: ${bgColor}; 
+                             color: ${textColor}; 
+                             font-size: ${baseSize * 0.9}px;
+                             border: 2px solid ${isSelected && !isAnswered ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};">
+                      ${opt}
+                    </button>
+                  `;
+                }).join('')}
+              </div>
+              
+              <div class="mobile-nav-controls">
+                <button onclick="prevVocabQuiz()" ${currentVocabQuizIndex === 0 ? 'disabled' : ''} 
+                  class="mobile-nav-buttons px-4 py-2 rounded-lg font-semibold transition-colors" 
+                  style="background-color: ${currentVocabQuizIndex === 0 ? '#d1d5db' : (config.primary_color || defaultConfig.primary_color)}; 
+                         color: white; font-size: ${baseSize * 0.85}px;">
+                  ← Câu trước
+                </button>
+                <div class="text-center">
+                  <span style="font-size: ${baseSize * 0.9}px; font-weight: 600;">${currentVocabQuizIndex + 1} / ${vocabularyQuizzes.length}</span>
                 </div>
-              `).join('')}
+                <button onclick="nextVocabQuiz()" ${currentVocabQuizIndex === vocabularyQuizzes.length - 1 ? 'disabled' : ''} 
+                  class="mobile-nav-buttons px-4 py-2 rounded-lg font-semibold transition-colors" 
+                  style="background-color: ${currentVocabQuizIndex === vocabularyQuizzes.length - 1 ? '#d1d5db' : (config.primary_color || defaultConfig.primary_color)}; 
+                         color: white; font-size: ${baseSize * 0.85}px;">
+                  Câu tiếp →
+                </button>
+              </div>
             </div>
           `;
         }
@@ -1015,7 +1117,7 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
         content += `
           <div class="rounded-lg p-4 sm:p-6 mb-4 sm:mb-6" style="background-color: ${config.card_color || defaultConfig.card_color}; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <h2 class="font-bold mb-3 sm:mb-4" style="font-size: ${baseSize * 1.3}px;">Bài đọc</h2>
-            <div class="mobile-reading-text" style="font-size: ${baseSize * 0.95}px;">${readingText}</div>
+            <div class="mobile-reading-text p-4 rounded-lg mb-6" style="font-size: ${baseSize * 0.95}px; background-color: ${config.background_color || defaultConfig.background_color}; line-height: 1.8; border-left: 4px solid ${config.primary_color || defaultConfig.primary_color};">${readingText}</div>
             
             <h3 class="font-bold mb-3 sm:mb-4" style="font-size: ${baseSize * 1.2}px;">Câu hỏi trắc nghiệm</h3>
             ${readingQuestions.map((q, qIdx) => `
@@ -1024,19 +1126,33 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
                 ${q.options.map((opt, optIdx) => {
                   const isSelected = currentReadingAnswer[qIdx] === optIdx;
                   const isCorrect = optIdx === q.correct;
-                  const showResult = currentReadingAnswer[qIdx] !== null;
+                  const isAnswered = currentReadingAnswer[qIdx] !== null;
                   let bgColor = config.card_color || defaultConfig.card_color;
-                  if (showResult && isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
-                  if (showResult && isSelected && !isCorrect) bgColor = '#ef4444';
-                  if (showResult && !isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
+                  let textColor = config.text_color || defaultConfig.text_color;
+                  
+                  // Chỉ hiển thị màu kết quả khi đã trả lời
+                  if (isAnswered) {
+                    if (isSelected && isCorrect) {
+                      bgColor = config.accent_color || defaultConfig.accent_color;
+                      textColor = 'white';
+                    } else if (isSelected && !isCorrect) {
+                      bgColor = '#ef4444';
+                      textColor = 'white';
+                    } else if (!isSelected && isCorrect) {
+                      bgColor = config.accent_color || defaultConfig.accent_color;
+                      textColor = 'white';
+                    }
+                  }
                   
                   return `
                     <button onclick="checkReadingAnswer(${qIdx}, ${optIdx})" 
-                      class="w-full text-left p-2 sm:p-3 rounded mb-1 sm:mb-2 transition-colors text-sm sm:text-base"
+                      ${isAnswered ? 'disabled' : ''}
+                      class="w-full text-left p-2 sm:p-3 rounded mb-1 sm:mb-2 transition-colors text-sm sm:text-base ${isAnswered ? 'cursor-not-allowed' : 'hover:opacity-80'}"
                       style="background-color: ${bgColor}; 
-                             color: ${showResult && (isCorrect || isSelected) ? 'white' : (config.text_color || defaultConfig.text_color)}; 
+                             color: ${textColor}; 
                              font-size: ${baseSize * 0.85}px;
-                             border: 2px solid ${isSelected ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};">
+                             border: 2px solid ${isSelected && !isAnswered ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};
+                             opacity: ${isAnswered ? '1' : '1'};">
                       ${opt}
                     </button>
                   `;
@@ -1119,31 +1235,60 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
             ${currentGrammarTopic === 'exercises' ? `
               <div class="space-y-3 sm:space-y-4">
                 <h3 class="font-bold mb-3 sm:mb-4" style="font-size: ${baseSize * 1.2}px;">Bài tập tổng hợp</h3>
-                ${grammarExercises.map((ex, exIdx) => `
-                  <div class="p-3 sm:p-4 rounded-lg" style="background-color: ${config.background_color || defaultConfig.background_color};">
-                    <p class="font-semibold mb-2 sm:mb-3" style="font-size: ${baseSize * 0.9}px;">${exIdx + 1}. ${ex.question}</p>
-                    ${ex.options.map((opt, optIdx) => {
-                      const isSelected = currentExerciseAnswers[exIdx] === optIdx;
-                      const isCorrect = optIdx === ex.correct;
-                      const showResult = currentExerciseAnswers[exIdx] !== null;
-                      let bgColor = config.card_color || defaultConfig.card_color;
-                      if (showResult && isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
-                      if (showResult && isSelected && !isCorrect) bgColor = '#ef4444';
-                      if (showResult && !isSelected && isCorrect) bgColor = config.accent_color || defaultConfig.accent_color;
-                      
-                      return `
-                        <button onclick="checkGrammarAnswer(${exIdx}, ${optIdx})" 
-                          class="w-full text-left p-2 sm:p-3 rounded mb-1 sm:mb-2 transition-colors text-sm sm:text-base"
-                          style="background-color: ${bgColor}; 
-                                 color: ${showResult && (isCorrect || isSelected) ? 'white' : (config.text_color || defaultConfig.text_color)}; 
-                                 font-size: ${baseSize * 0.85}px;
-                                 border: 2px solid ${isSelected ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};">
-                          ${opt}
-                        </button>
-                      `;
-                    }).join('')}
+                <div class="p-3 sm:p-4 rounded-lg" style="background-color: ${config.background_color || defaultConfig.background_color};">
+                  <p class="font-semibold mb-2 sm:mb-3" style="font-size: ${baseSize * 0.9}px;">${currentGrammarExerciseIndex + 1}. ${grammarExercises[currentGrammarExerciseIndex].question}</p>
+                  ${grammarExercises[currentGrammarExerciseIndex].options.map((opt, optIdx) => {
+                    const isSelected = currentExerciseAnswers[currentGrammarExerciseIndex] === optIdx;
+                    const isCorrect = optIdx === grammarExercises[currentGrammarExerciseIndex].correct;
+                    const isAnswered = currentExerciseAnswers[currentGrammarExerciseIndex] !== null;
+                    let bgColor = config.card_color || defaultConfig.card_color;
+                    let textColor = config.text_color || defaultConfig.text_color;
+                    
+                    // Chỉ hiển thị màu kết quả khi đã trả lời
+                    if (isAnswered) {
+                      if (isSelected && isCorrect) {
+                        bgColor = config.accent_color || defaultConfig.accent_color;
+                        textColor = 'white';
+                      } else if (isSelected && !isCorrect) {
+                        bgColor = '#ef4444';
+                        textColor = 'white';
+                      } else if (!isSelected && isCorrect) {
+                        bgColor = config.accent_color || defaultConfig.accent_color;
+                        textColor = 'white';
+                      }
+                    }
+                    
+                    return `
+                      <button onclick="checkGrammarAnswer(${currentGrammarExerciseIndex}, ${optIdx})" 
+                        ${isAnswered ? 'disabled' : ''}
+                        class="w-full text-left p-2 sm:p-3 rounded mb-1 sm:mb-2 transition-colors text-sm sm:text-base ${isAnswered ? 'cursor-not-allowed' : 'hover:opacity-80'}"
+                        style="background-color: ${bgColor}; 
+                               color: ${textColor}; 
+                               font-size: ${baseSize * 0.85}px;
+                               border: 2px solid ${isSelected && !isAnswered ? (config.primary_color || defaultConfig.primary_color) : 'transparent'};">
+                        ${opt}
+                      </button>
+                    `;
+                  }).join('')}
+                </div>
+                
+                <div class="mobile-nav-controls">
+                  <button onclick="prevGrammarExercise()" ${currentGrammarExerciseIndex === 0 ? 'disabled' : ''} 
+                    class="mobile-nav-buttons px-4 py-2 rounded-lg font-semibold transition-colors" 
+                    style="background-color: ${currentGrammarExerciseIndex === 0 ? '#d1d5db' : (config.primary_color || defaultConfig.primary_color)}; 
+                           color: white; font-size: ${baseSize * 0.85}px;">
+                    ← Câu trước
+                  </button>
+                  <div class="text-center">
+                    <span style="font-size: ${baseSize * 0.9}px; font-weight: 600;">${currentGrammarExerciseIndex + 1} / ${grammarExercises.length}</span>
                   </div>
-                `).join('')}
+                  <button onclick="nextGrammarExercise()" ${currentGrammarExerciseIndex === grammarExercises.length - 1 ? 'disabled' : ''} 
+                    class="mobile-nav-buttons px-4 py-2 rounded-lg font-semibold transition-colors" 
+                    style="background-color: ${currentGrammarExerciseIndex === grammarExercises.length - 1 ? '#d1d5db' : (config.primary_color || defaultConfig.primary_color)}; 
+                           color: white; font-size: ${baseSize * 0.85}px;">
+                    Câu tiếp →
+                  </button>
+                </div>
               </div>
             ` : ''}
           </div>
@@ -1171,6 +1316,10 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
     window.flipCard = flipCard;
     window.checkReadingAnswer = checkReadingAnswer;
     window.checkVocabQuizAnswer = checkVocabQuizAnswer;
+    window.nextVocabQuiz = nextVocabQuiz;
+    window.prevVocabQuiz = prevVocabQuiz;
+    window.nextGrammarExercise = nextGrammarExercise;
+    window.prevGrammarExercise = prevGrammarExercise;
     window.selectGrammarTopic = function(topicIdx) {
       currentGrammarTopic = topicIdx;
       render();
@@ -1274,5 +1423,5 @@ Smart infrastructure will include <span class="highlight">solar windows</span> t
 
     init();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'997bba1341320d7e',t:'MTc2MjAwMzYxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99dfeff606bf40d9',t:'MTc2MzA1NDQwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
